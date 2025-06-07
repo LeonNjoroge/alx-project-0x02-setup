@@ -3,9 +3,9 @@ import React from "react";
 
 const Header: React.FC = () =>{
     return (
-        <header>
-            <Link href="/home">Home</Link>
-            <Link href="/about">About</Link>
+        <header className="flex gap-2 ">
+            <Link href="/home" className="text-blue-400 hover:text-blue-700">Home</Link>
+            <Link href="/about" className="text-blue-400 hover:text-blue-700">About</Link>
         </header>
     );
 }
