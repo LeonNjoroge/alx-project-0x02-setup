@@ -1,6 +1,6 @@
 import React from "react";
 import {CardProps} from "@/interfaces";
-import Card from "@/components/Card";
+import Card from "@/components/common/Card";
 
 const Home: React.FC = () =>{
 
