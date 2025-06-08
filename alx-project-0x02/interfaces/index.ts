@@ -29,3 +29,10 @@ export interface  PostProps {
 
 export type Size = "small" | "medium" | "large";
 export type Shape = "rounded-sm" | "rounded-md" | "rounded-full";
+
+
+export interface  UserProps{
+        name: string;
+        email: string;
+        website: string;
+}
