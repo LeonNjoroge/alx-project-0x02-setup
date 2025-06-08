@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import { type CardProps, type PostModalProps } from "@/interfaces";
+import { type PostModalProps } from "@/interfaces";
 
 const PostModal: React.FC<PostModalProps> = ({ isOpen, onClose, onSubmit }) => {
     const [title, setTitle] = useState("");

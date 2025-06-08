@@ -2,10 +2,11 @@ import React, {useState} from "react";
 import {CardProps} from "@/interfaces";
 import Card from "@/components/common/Card";
 import PostModal from "@/components/common/PostModal";
+import Header from "@/components/layout/Header";
 
 const Home: React.FC = () =>{
 
-    let CardVals: CardProps[] = [
+    const CardVals: CardProps[] = [
         {title: "Card 1" , content: "Save the fish" },
         {title: "Card 2" , content: "Save the cats" },
         {title: "Card 3" , content: "Save the dogs" },
@@ -26,6 +27,8 @@ const Home: React.FC = () =>{
 
     return (
         <div className="p-10">
+            <Header />
+
             <h1>Home</h1>
             <div>
                 <button
@@ -37,7 +40,7 @@ const Home: React.FC = () =>{
             </div>
             <div className="flex gap-2 pt-5 justify-between">
                 {posts.map((value, idx) => (
-                    <Card title={value.title} content={value.content} />
+                    <Card key={idx} title={value.title} content={value.content} />
                 ))}
             </div>
 
