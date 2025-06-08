@@ -6,6 +6,8 @@ export interface CardProps {
         content: string;
 }
 
+
+
 export interface PostModalProps {
         isOpen: boolean;
         onClose: () => void;
@@ -17,6 +19,12 @@ export interface ButtonProps {
         shape: Shape;
         children: React.ReactNode;
         onClick?: () => void;
+}
+
+export interface  PostProps {
+        title: string;
+        content: string;
+        userId: number;
 }
 
 export type Size = "small" | "medium" | "large";
